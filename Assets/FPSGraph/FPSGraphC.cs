@@ -338,10 +338,10 @@ namespace DentedPixelPerformance {
 				
 				float dtLocal = Time.realtimeSinceStartup - r_lastRealTime;
 				float calculateFPS = (int) (1f / dtLocal);
-				//Debug.Log("dt:"+dt+" dtLocal:"+dtLocal);
+//				Debug.Log("dt:"+dt+" dtLocal:"+dtLocal);
 				dt = dtLocal;
 				
-				if(frameCount>6)
+				if(frameCount>3)
 					dtHistory[0, frameIter] = dt;
 				
 				if(dt<lowestDt){
